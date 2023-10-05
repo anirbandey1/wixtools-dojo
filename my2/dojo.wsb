@@ -1,0 +1,11 @@
+<Configuration>
+    <MappedFolders>
+        <MappedFolder>
+            <HostFolder>C:\Users\zubat\Documents\Code\dojo</HostFolder>
+            <SandboxFolder>C:\dojo</SandboxFolder>
+        </MappedFolder>
+    </MappedFolders>
+    <LogonCommand>
+        <Command>C:\dojo\my2\dojostart.cmd</Command>
+    </LogonCommand>
+</Configuration>
