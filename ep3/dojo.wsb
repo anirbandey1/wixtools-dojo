@@ -4,5 +4,12 @@
             <HostFolder>C:\Users\zubat\Documents\Code\dojo\ep2</HostFolder>
             <SandboxFolder>C:\dojo\ep2</SandboxFolder>
         </MappedFolder>
+        <MappedFolder>
+            <HostFolder>C:\Users\zubat\Documents\Code\dojo\ep3</HostFolder>
+            <SandboxFolder>C:\dojo\tools</SandboxFolder>
+        </MappedFolder>
     </MappedFolders>
+    <LogonCommand>
+        <Command>C:\dojo\tools\dojostart.cmd</Command>
+    </LogonCommand>
 </Configuration>
