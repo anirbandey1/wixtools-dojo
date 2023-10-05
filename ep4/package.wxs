@@ -1,7 +1,8 @@
 <Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
     <Package Name="~Ep4" Manufacturer="Deployment Dojo"
-        UpgradeCode="aab6eb7a-a02b-4e58-ac7d-cdd0db6f7068" Version="0.9">
+        UpgradeCode="aab6eb7a-a02b-4e58-ac7d-cdd0db6f7068" Version="0.9.1">
 
+        <MajorUpgrade DowngradeErrorMessage="A newer version was detected." />
         <StandardDirectory Id="ProgramFilesFolder">
             <Directory Name="~Ep2">
                 <Component Id="c1">

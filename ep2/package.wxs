@@ -2,6 +2,8 @@
     <Package Name="~Ep2" Manufacturer="Deployment Dojo"
         UpgradeCode="37733591-0bff-414f-a6e5-25127e441e37" Version="0.9">
 
+        <MajorUpgrade DowngradeErrorMessage="A newer version was detected." />
+
         <StandardDirectory Id="ProgramFilesFolder">
             <Directory Name="~Ep2">
                 <Component Id="c1">
