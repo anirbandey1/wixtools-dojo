@@ -1,0 +1,17 @@
+<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
+    <Package Name="Kata #1" Manufacturer="Deployment Dojo"
+        UpgradeCode="79e1c522-cea2-4d05-94e6-e32575b5f809" Version="0.9">
+
+        <StandardDirectory Id="ProgramFilesFolder">
+            <Directory Id="DojoFolder" Name="~Dojo - Kata #1" />
+        </StandardDirectory>
+
+        <Feature Id="Main">
+            <Component Directory="DojoFolder">
+                <File Source="a.txt" />
+            </Component>
+        </Feature>
+
+    </Package>
+
+</Wix>
