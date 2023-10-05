@@ -7,18 +7,6 @@
             <Directory Id="InstallFolder" Name="~My2" />
         </StandardDirectory>
 
-        <ComponentGroup Id="InstallComponents" Directory="InstallFolder">
-            <Component Id="c1">
-                <File Source="a.exe" />
-                <Shortcut Name="Deployment Shortcut" Directory="DesktopFolder" Advertise="yes"
-                    Icon="a.exe" />
-                <Shortcut Name="Deployment Shortcut" Directory="ProgramMenuFolder"
-                    Advertise="yes" Icon="a.exe" />
-            </Component>
-
-        </ComponentGroup>
-        <Icon Id="a.exe" SourceFile="a.png" />
-
 
         <Feature Id="Main">
             <ComponentGroupRef Id="InstallComponents" />

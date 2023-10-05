@@ -1,0 +1,27 @@
+<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
+    <Fragment>
+
+
+        <ComponentGroup Id="InstallComponents" Directory="InstallFolder">
+            <Component Id="c1">
+                <File Source="a.exe" />
+                <Shortcut Name="Deployment Shortcut" Directory="DesktopFolder" Advertise="yes"
+                    Icon="a.exe" />
+                <Shortcut Name="Deployment Shortcut" Directory="ProgramMenuFolder"
+                    Advertise="yes" Icon="a.exe" />
+                </Component>
+                <ComponentGroupRef Id="SomeImageComponent" />
+
+        </ComponentGroup>
+        <Icon Id="a.exe" SourceFile="a.png" />
+
+    </Fragment>
+
+    <Fragment>
+        <ComponentGroup Id="SomeImageComponent" Directory="InstallFolder">
+        <Component>
+            <File Source="a.png" />
+            </Component>
+        </ComponentGroup>
+    </Fragment>
+</Wix>
