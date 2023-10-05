@@ -1,0 +1,8 @@
+<Configuration>
+    <MappedFolders>
+        <MappedFolder>
+            <HostFolder>C:\Users\zubat\Documents\Code\dojo\ep2</HostFolder>
+            <SandboxFolder>C:\dojo\ep2</SandboxFolder>
+        </MappedFolder>
+    </MappedFolders>
+</Configuration>
