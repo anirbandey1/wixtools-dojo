@@ -1,0 +1,38 @@
+<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
+    <Fragment>
+
+        <ComponentGroup Id="InstallComponents" Directory="InstallFolder">
+            <Component Id="c1">
+                <File Source="a.exe" />
+                <Shortcut Name="Deployment Shortcut" Directory="DesktopFolder" Advertise="yes"
+                    Icon="a.exe" />
+                <Shortcut Name="Deployment Shortcut" Directory="ProgramMenuFolder"
+                    Advertise="yes" Icon="a.exe" />
+            </Component>
+            <ComponentGroupRef Id="SomeImageComponent" />
+            <ComponentGroupRef Id="SetEnvironmentCompGrp" />
+
+        </ComponentGroup>
+        <Icon Id="a.exe" SourceFile="a.ico" />
+
+    </Fragment>
+
+    <Fragment>
+        <ComponentGroup Id="SomeImageComponent" Directory="InstallFolder">
+            <Component>
+                <File Source="a.png" />
+            </Component>
+        </ComponentGroup>
+    </Fragment>
+
+    <Fragment>
+        <ComponentGroup Id="SetEnvironmentCompGrp" Directory="InstallFolder">
+            <Component Id="componentSetEnvironment1" Guid="72d53370-18fe-4e54-94bb-8896a9ee398b">
+                <Environment Id="SetEnv" Action="set" Name="PATH" Value="[InstallFolder]"
+                    Part="last" Permanent="no" System="yes" />
+            </Component>
+
+        </ComponentGroup>
+
+    </Fragment>
+</Wix>

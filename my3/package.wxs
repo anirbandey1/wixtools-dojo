@@ -1,0 +1,19 @@
+<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
+    <Package Name="~My3" Manufacturer="Deployment Dojo"
+        UpgradeCode="aab6eb7a-a02b-4e58-ac7d-cdd0db6f7068" Version="0.9.1">
+
+        <MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] was detected." />
+        <StandardDirectory Id="ProgramFilesFolder">
+            <Directory Id="ManufacturerFolder" Name="!(bind.Property.Manufacturer)">
+                <Directory Id="InstallFolder" Name="!(bind.Property.ProductName)" />
+            </Directory>
+        </StandardDirectory>
+
+
+        <Feature Id="Main">
+            <ComponentGroupRef Id="InstallComponents" />
+        </Feature>
+
+    </Package>
+
+</Wix>
