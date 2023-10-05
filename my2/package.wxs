@@ -4,7 +4,9 @@
 
         <MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] was detected." />
         <StandardDirectory Id="ProgramFilesFolder">
-            <Directory Id="InstallFolder" Name="~My2" />
+            <Directory Id="ManufacturerFolder" Name="Deployment Dojo">
+                <Directory Id="InstallFolder" Name="~My2" />
+            </Directory>
         </StandardDirectory>
 
 
