@@ -13,7 +13,7 @@
                 <ComponentGroupRef Id="SomeImageComponent" />
 
         </ComponentGroup>
-        <Icon Id="a.exe" SourceFile="a.png" />
+        <Icon Id="a.exe" SourceFile="a.ico" />
 
     </Fragment>
 
